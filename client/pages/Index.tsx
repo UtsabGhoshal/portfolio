@@ -864,17 +864,17 @@ export default function Index() {
                   </div>
 
                   {/* Enhanced Project Stats */}
-                  <div className="flex items-center justify-between pt-6 border-t border-purple-200">
+                  <div className="flex items-center justify-between pt-6 border-t border-orange-200">
                     <div className="flex items-center gap-8 text-sm text-gray-600">
-                      <div className="flex items-center gap-2 hover:text-purple-600 transition-colors duration-300 cursor-pointer group">
+                      <div className="flex items-center gap-2 hover:text-orange-600 transition-colors duration-300 cursor-pointer group">
                         <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                         <span className="font-medium">Visit Live Site</span>
                       </div>
-                      <div className="flex items-center gap-2 hover:text-purple-600 transition-colors duration-300 cursor-pointer group">
+                      <div className="flex items-center gap-2 hover:text-orange-600 transition-colors duration-300 cursor-pointer group">
                         <Star className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                         <span className="font-medium">Star Repository</span>
                       </div>
-                      <div className="flex items-center gap-2 hover:text-purple-600 transition-colors duration-300 cursor-pointer group">
+                      <div className="flex items-center gap-2 hover:text-orange-600 transition-colors duration-300 cursor-pointer group">
                         <GitFork className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                         <span className="font-medium">Fork & Contribute</span>
                       </div>
