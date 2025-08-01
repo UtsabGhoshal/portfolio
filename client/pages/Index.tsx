@@ -814,28 +814,28 @@ export default function Index() {
                   </div>
 
                   {/* Enhanced Call to Action */}
-                  <div className="bg-gradient-to-r from-purple-50 via-indigo-50 to-purple-50 p-8 rounded-2xl border-2 border-purple-200 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-purple-200/30 to-indigo-200/30 rounded-full blur-xl"></div>
+                  <div className="bg-gradient-to-r from-orange-50 via-red-50 to-orange-50 p-8 rounded-2xl border-2 border-orange-200 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-orange-200/30 to-red-200/30 rounded-full blur-xl"></div>
                     <div className="relative z-10">
-                      <h4 className="font-bold text-purple-800 mb-3 flex items-center gap-3 text-xl">
-                        <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full flex items-center justify-center">
+                      <h4 className="font-bold text-orange-800 mb-3 flex items-center gap-3 text-xl">
+                        <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center">
                           <Heart className="w-5 h-5 text-white animate-pulse" />
                         </div>
-                        Contribute & Collaborate!
+                        Celebrate Culture & Code!
                       </h4>
-                      <p className="text-purple-700 text-lg mb-4 leading-relaxed font-medium">
-                        Love what you see? This project is open for contributions! Help improve the design,
-                        add new features, or enhance the user experience. Perfect for learning modern web development.
+                      <p className="text-orange-700 text-lg mb-4 leading-relaxed font-medium">
+                        Experience the divine celebration through this interactive website! This project beautifully
+                        blends cultural heritage with modern web development, showcasing festival traditions and stories.
                       </p>
                       <div className="flex flex-wrap gap-3">
-                        <Badge variant="outline" className="text-purple-600 border-purple-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
-                          UI/UX Improvements
+                        <Badge variant="outline" className="text-orange-600 border-orange-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
+                          Cultural Stories
                         </Badge>
-                        <Badge variant="outline" className="text-purple-600 border-purple-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
-                          Feature Additions
+                        <Badge variant="outline" className="text-orange-600 border-orange-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
+                          Festival Gallery
                         </Badge>
-                        <Badge variant="outline" className="text-purple-600 border-purple-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
-                          Code Optimization
+                        <Badge variant="outline" className="text-orange-600 border-orange-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
+                          Traditional Design
                         </Badge>
                       </div>
                     </div>
