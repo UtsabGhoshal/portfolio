@@ -765,29 +765,29 @@ export default function Index() {
                   <div>
                     <div className="flex items-center gap-4 mb-6">
                       <div className="relative">
-                        <div className="w-16 h-16 bg-gradient-to-br from-purple-500 via-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                        <div className="w-16 h-16 bg-gradient-to-br from-orange-500 via-red-500 to-orange-600 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
                           <Camera className="w-8 h-8 text-white" />
                         </div>
-                        <div className="absolute -top-2 -right-2 w-6 h-6 bg-pink-400 rounded-full flex items-center justify-center animate-bounce">
-                          <Sparkles className="w-3 h-3 text-white" />
+                        <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center animate-bounce">
+                          <Sparkles className="w-3 h-3 text-orange-800" />
                         </div>
                       </div>
                       <div>
-                        <h3 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-purple-700 to-indigo-700 bg-clip-text text-transparent">
-                          Beyond Lenses
+                        <h3 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-orange-700 to-red-700 bg-clip-text text-transparent">
+                          Durga Puja Blog
                         </h3>
                         <div className="flex items-center gap-2 mt-2">
-                          <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                          <span className="text-green-600 font-semibold text-lg">Live & Interactive</span>
-                          <MousePointer className="w-4 h-4 text-green-600 animate-pulse" />
+                          <div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
+                          <span className="text-orange-600 font-semibold text-lg">Cultural Heritage</span>
+                          <MousePointer className="w-4 h-4 text-orange-600 animate-pulse" />
                         </div>
                       </div>
                     </div>
 
                     <p className="text-xl text-gray-700 leading-relaxed mb-8 font-medium">
-                      A stunning travel and tourism website showcasing the beauty of West Bengal.
-                      Features responsive design, smooth animations, and an intuitive user experience that brings
-                      the diverse cultures, breathtaking landscapes, and rich heritage to life on the web.
+                      A beautifully crafted website celebrating the divine festival of Durga Puja.
+                      This cultural blog showcases the rich traditions, vibrant celebrations, and spiritual significance
+                      of Bengal's most beloved festival through stunning visuals and engaging storytelling.
                     </p>
                   </div>
 
