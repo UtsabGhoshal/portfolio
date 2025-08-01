@@ -627,15 +627,15 @@ export default function Index() {
 
           {/* Durga Puja Website Showcase */}
           <div className="max-w-6xl mx-auto">
-            <Card className="group hover:shadow-2xl transition-all duration-700 hover:-translate-y-3 animate-scale-in bg-white/80 backdrop-blur-sm border-2 border-purple-200/50 relative overflow-hidden hover:border-purple-300/70 hover:bg-white/90">
+            <Card className="group hover:shadow-2xl transition-all duration-700 hover:-translate-y-3 animate-scale-in bg-white/80 backdrop-blur-sm border-2 border-orange-200/50 relative overflow-hidden hover:border-orange-300/70 hover:bg-white/90">
               {/* Animated Border Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-indigo-400 to-pink-400 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-500 animate-pulse"></div>
-              <div className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500 rounded-lg opacity-0 group-hover:opacity-10 transition-opacity duration-700 blur-sm"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-500 animate-pulse"></div>
+              <div className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-lg opacity-0 group-hover:opacity-10 transition-opacity duration-700 blur-sm"></div>
 
               {/* Enhanced Decorative Elements */}
-              <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-purple-300/30 to-pink-300/30 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-500 group-hover:rotate-12"></div>
-              <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-br from-indigo-300/30 to-purple-300/30 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-500 group-hover:-rotate-12"></div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-gradient-to-br from-pink-300/20 to-purple-300/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000 animate-pulse"></div>
+              <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-orange-300/30 to-red-300/30 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-500 group-hover:rotate-12"></div>
+              <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-br from-red-300/30 to-orange-300/30 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-500 group-hover:-rotate-12"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-gradient-to-br from-orange-300/20 to-red-300/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000 animate-pulse"></div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 relative z-10">
                 {/* Website Preview */}
