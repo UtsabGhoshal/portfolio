@@ -732,29 +732,29 @@ export default function Index() {
 
                   {/* Enhanced Floating Elements */}
                   <div className="absolute top-6 left-6 flex flex-col gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-300">
-                    <Badge className="bg-white/95 text-purple-700 border border-purple-300 shadow-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 transform translate-x-[-20px] group-hover:translate-x-0">
-                      <Globe className="w-4 h-4 mr-2 text-purple-600" />
+                    <Badge className="bg-white/95 text-orange-700 border border-orange-300 shadow-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 transform translate-x-[-20px] group-hover:translate-x-0">
+                      <Globe className="w-4 h-4 mr-2 text-orange-600" />
                       Live Website
                     </Badge>
-                    <Badge className="bg-white/95 text-indigo-700 border border-indigo-300 shadow-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 delay-100 transform translate-x-[-20px] group-hover:translate-x-0">
-                      <Palette className="w-4 h-4 mr-2 text-indigo-600" />
-                      Travel Portal
+                    <Badge className="bg-white/95 text-red-700 border border-red-300 shadow-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 delay-100 transform translate-x-[-20px] group-hover:translate-x-0">
+                      <Palette className="w-4 h-4 mr-2 text-red-600" />
+                      Festival Blog
                     </Badge>
-                    <Badge className="bg-white/95 text-pink-700 border border-pink-300 shadow-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 delay-200 transform translate-x-[-20px] group-hover:translate-x-0">
-                      <Monitor className="w-4 h-4 mr-2 text-pink-600" />
-                      Responsive
+                    <Badge className="bg-white/95 text-amber-700 border border-amber-300 shadow-lg backdrop-blur-sm hover:scale-105 transition-all duration-300 delay-200 transform translate-x-[-20px] group-hover:translate-x-0">
+                      <Monitor className="w-4 h-4 mr-2 text-amber-600" />
+                      Cultural Theme
                     </Badge>
                   </div>
 
                   {/* Feature Icons */}
                   <div className="absolute bottom-6 right-6 flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-500">
-                    <div className="w-12 h-12 bg-purple-500/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 transform translate-y-[20px] group-hover:translate-y-0 hover:rotate-12">
+                    <div className="w-12 h-12 bg-orange-500/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 transform translate-y-[20px] group-hover:translate-y-0 hover:rotate-12">
                       <Camera className="w-6 h-6 text-white" />
                     </div>
-                    <div className="w-12 h-12 bg-indigo-500/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 delay-100 transform translate-y-[20px] group-hover:translate-y-0 hover:-rotate-12">
+                    <div className="w-12 h-12 bg-red-500/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 delay-100 transform translate-y-[20px] group-hover:translate-y-0 hover:-rotate-12">
                       <Globe className="w-6 h-6 text-white" />
                     </div>
-                    <div className="w-12 h-12 bg-pink-500/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 delay-200 transform translate-y-[20px] group-hover:translate-y-0 hover:rotate-12">
+                    <div className="w-12 h-12 bg-amber-500/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 delay-200 transform translate-y-[20px] group-hover:translate-y-0 hover:rotate-12">
                       <Palette className="w-6 h-6 text-white" />
                     </div>
                   </div>
