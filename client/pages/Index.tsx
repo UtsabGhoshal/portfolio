@@ -1,7 +1,43 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Github, ExternalLink, Mail, Linkedin, Download, Code, Users, Star, Menu, X, Heart, Sparkles, Rocket, Coffee, Car, GitFork, Eye, Clock, CheckCircle, ArrowRight, Zap, Globe, Shield, Smartphone, Camera, ImageIcon, Palette, Monitor, MousePointer } from "lucide-react";
+import {
+  Github,
+  ExternalLink,
+  Mail,
+  Linkedin,
+  Download,
+  Code,
+  Users,
+  Star,
+  Menu,
+  X,
+  Heart,
+  Sparkles,
+  Rocket,
+  Coffee,
+  Car,
+  GitFork,
+  Eye,
+  Clock,
+  CheckCircle,
+  ArrowRight,
+  Zap,
+  Globe,
+  Shield,
+  Smartphone,
+  Camera,
+  ImageIcon,
+  Palette,
+  Monitor,
+  MousePointer,
+} from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function Index() {
@@ -10,13 +46,23 @@ export default function Index() {
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const techStack = [
-    "HTML", "CSS", "JavaScript", "React", "Node.js", "Express", 
-    "MongoDB", "TypeScript", "C", "C++", "Git", "REST APIs"
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "TypeScript",
+    "C",
+    "C++",
+    "Git",
+    "REST APIs",
   ];
 
   return (
@@ -29,9 +75,13 @@ export default function Index() {
       </div>
 
       {/* Navigation */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        scrollY > 50 ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white/80 backdrop-blur-md'
-      } border-b border-white/20`}>
+      <nav
+        className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+          scrollY > 50
+            ? "bg-white/95 backdrop-blur-md shadow-lg"
+            : "bg-white/80 backdrop-blur-md"
+        } border-b border-white/20`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
@@ -42,17 +92,40 @@ export default function Index() {
                 Utsab Ghoshal
               </div>
             </div>
-            
+
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">About</a>
-              <a href="#journey" className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Journey</a>
-              <a href="#vision" className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Vision</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Contact</a>
+              <a
+                href="#about"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+              >
+                About
+              </a>
+              <a
+                href="#journey"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+              >
+                Journey
+              </a>
+              <a
+                href="#vision"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+              >
+                Vision
+              </a>
+              <a
+                href="#contact"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+              >
+                Contact
+              </a>
             </div>
-            
+
             <div className="hidden md:flex">
-              <Button variant="outline" className="hover:scale-105 transition-transform duration-300 gradient-border">
+              <Button
+                variant="outline"
+                className="hover:scale-105 transition-transform duration-300 gradient-border"
+              >
                 <Download className="w-4 h-4 mr-2" />
                 Resume
               </Button>
@@ -65,7 +138,11 @@ export default function Index() {
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </Button>
           </div>
 
@@ -73,10 +150,30 @@ export default function Index() {
           {isMenuOpen && (
             <div className="md:hidden py-4 animate-fade-in">
               <div className="flex flex-col space-y-4">
-                <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</a>
-                <a href="#journey" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Journey</a>
-                <a href="#vision" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Vision</a>
-                <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
+                <a
+                  href="#about"
+                  className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                >
+                  About
+                </a>
+                <a
+                  href="#journey"
+                  className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                >
+                  Journey
+                </a>
+                <a
+                  href="#vision"
+                  className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                >
+                  Vision
+                </a>
+                <a
+                  href="#contact"
+                  className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                >
+                  Contact
+                </a>
                 <Button variant="outline" className="w-fit">
                   <Download className="w-4 h-4 mr-2" />
                   Resume
@@ -95,7 +192,9 @@ export default function Index() {
               <div className="space-y-4">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-green-600 font-medium">Available for opportunities</span>
+                  <span className="text-green-600 font-medium">
+                    Available for opportunities
+                  </span>
                 </div>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   Hi, I'm
@@ -106,17 +205,21 @@ export default function Index() {
                 <div className="flex items-center gap-3 mb-4">
                   <Coffee className="w-6 h-6 text-amber-600" />
                   <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-                    Pre-final year Computer Science student at <span className="font-semibold text-blue-600">JIS University</span>, passionate about creating 
-                    innovative web solutions using modern technologies like MERN stack, TypeScript, and more.
+                    Pre-final year Computer Science student at{" "}
+                    <span className="font-semibold text-blue-600">
+                      JIS University
+                    </span>
+                    , passionate about creating innovative web solutions using
+                    modern technologies like MERN stack, TypeScript, and more.
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex flex-wrap gap-2 sm:gap-3">
                 {techStack.slice(0, 8).map((tech, index) => (
-                  <Badge 
-                    key={tech} 
-                    variant="secondary" 
+                  <Badge
+                    key={tech}
+                    variant="secondary"
                     className="text-sm py-2 px-4 hover:scale-110 transition-transform duration-300 cursor-default bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 hover:border-blue-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
@@ -126,19 +229,23 @@ export default function Index() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                  onClick={() => window.location.href = 'mailto:utsab.ghoshal04@gmail.com'}
+                  onClick={() =>
+                    (window.location.href = "mailto:utsab.ghoshal04@gmail.com")
+                  }
                 >
                   <Mail className="w-4 h-4 mr-2" />
                   Get In Touch
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
+                <Button
+                  variant="outline"
+                  size="lg"
                   className="hover:scale-105 transition-all duration-300 gradient-border"
-                  onClick={() => window.open('https://github.com/UtsabGhoshal', '_blank')}
+                  onClick={() =>
+                    window.open("https://github.com/UtsabGhoshal", "_blank")
+                  }
                 >
                   <Github className="w-4 h-4 mr-2" />
                   GitHub
@@ -189,19 +296,25 @@ export default function Index() {
       </section>
 
       {/* Journey Section */}
-      <section id="journey" className="py-20 px-4 bg-white/60 backdrop-blur-sm relative">
+      <section
+        id="journey"
+        className="py-20 px-4 bg-white/60 backdrop-blur-sm relative"
+      >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <div className="flex items-center justify-center gap-2 mb-4">
               <Rocket className="w-8 h-8 text-blue-600" />
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">My Coding Journey</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+                My Coding Journey
+              </h2>
               <Rocket className="w-8 h-8 text-blue-600 scale-x-[-1]" />
             </div>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Every line of code is a step forward in my journey to becoming a skilled developer. 
-              Currently pursuing Computer Science at JIS University, I'm passionate about building 
-              meaningful solutions and contributing to the tech community.
+              Every line of code is a step forward in my journey to becoming a
+              skilled developer. Currently pursuing Computer Science at JIS
+              University, I'm passionate about building meaningful solutions and
+              contributing to the tech community.
             </p>
           </div>
 
@@ -211,42 +324,57 @@ export default function Index() {
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Code className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-xl text-blue-900">Learning & Growing</CardTitle>
+                <CardTitle className="text-xl text-blue-900">
+                  Learning & Growing
+                </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-base text-gray-700">
-                  Constantly expanding my knowledge in web development, exploring new technologies, 
-                  and building exciting projects that challenge my skills and creativity.
+                  Constantly expanding my knowledge in web development,
+                  exploring new technologies, and building exciting projects
+                  that challenge my skills and creativity.
                 </CardDescription>
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-scale-in bg-gradient-to-br from-green-50 to-emerald-50 border-green-200" style={{ animationDelay: '0.2s' }}>
+            <Card
+              className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-scale-in bg-gradient-to-br from-green-50 to-emerald-50 border-green-200"
+              style={{ animationDelay: "0.2s" }}
+            >
               <CardHeader className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Users className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-xl text-green-900">Collaborating</CardTitle>
+                <CardTitle className="text-xl text-green-900">
+                  Collaborating
+                </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-base text-gray-700">
-                  Believing in the power of teamwork and open-source contribution. Ready to collaborate 
-                  on innovative projects and learn from the amazing developer community.
+                  Believing in the power of teamwork and open-source
+                  contribution. Ready to collaborate on innovative projects and
+                  learn from the amazing developer community.
                 </CardDescription>
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-scale-in bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200" style={{ animationDelay: '0.4s' }}>
+            <Card
+              className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-scale-in bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200"
+              style={{ animationDelay: "0.4s" }}
+            >
               <CardHeader className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Star className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-xl text-purple-900">Innovating</CardTitle>
+                <CardTitle className="text-xl text-purple-900">
+                  Innovating
+                </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-base text-gray-700">
-                  Passionate about creating solutions that make a difference. From web applications 
-                  to system-level programming, always looking for ways to innovate and improve.
+                  Passionate about creating solutions that make a difference.
+                  From web applications to system-level programming, always
+                  looking for ways to innovate and improve.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -260,7 +388,9 @@ export default function Index() {
           <div className="text-center mb-16 animate-fade-in">
             <div className="flex items-center justify-center gap-2 mb-4">
               <Sparkles className="w-8 h-8 text-indigo-600" />
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Future Vision</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+                Future Vision
+              </h2>
               <Sparkles className="w-8 h-8 text-indigo-600" />
             </div>
             <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-6 rounded-full"></div>
@@ -270,7 +400,7 @@ export default function Index() {
             <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 animate-scale-in bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 border-indigo-200 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-yellow-200/20 to-pink-200/20 rounded-full blur-2xl"></div>
               <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-2xl"></div>
-              
+
               <CardHeader className="text-center relative z-10">
                 <CardTitle className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">
                   Building Tomorrow's Solutions Today
@@ -278,18 +408,23 @@ export default function Index() {
               </CardHeader>
               <CardContent className="text-center space-y-6 relative z-10">
                 <CardDescription className="text-lg text-gray-700 leading-relaxed">
-                  🚀 Currently focused on mastering the <strong>MERN stack</strong> and <strong>TypeScript</strong> 
-                  to build scalable, modern web applications that solve real-world problems.
+                  🚀 Currently focused on mastering the{" "}
+                  <strong>MERN stack</strong> and <strong>TypeScript</strong>
+                  to build scalable, modern web applications that solve
+                  real-world problems.
                 </CardDescription>
-                
+
                 <CardDescription className="text-lg text-gray-700 leading-relaxed">
-                  💡 Passionate about <strong>open-source contribution</strong> and creating tools that help other developers 
-                  grow and succeed in their coding journey.
+                  💡 Passionate about <strong>open-source contribution</strong>{" "}
+                  and creating tools that help other developers grow and succeed
+                  in their coding journey.
                 </CardDescription>
-                
+
                 <CardDescription className="text-lg text-gray-700 leading-relaxed">
-                  🎯 My goal is to become a <strong>full-stack developer</strong> who can bridge the gap between 
-                  innovative ideas and practical, user-friendly solutions.
+                  🎯 My goal is to become a{" "}
+                  <strong>full-stack developer</strong> who can bridge the gap
+                  between innovative ideas and practical, user-friendly
+                  solutions.
                 </CardDescription>
 
                 <div className="flex flex-wrap justify-center gap-3 pt-4">
@@ -340,7 +475,7 @@ export default function Index() {
             </div>
             <div className="w-32 h-1.5 bg-gradient-to-r from-green-600 via-emerald-500 to-blue-600 mx-auto mb-8 rounded-full animate-pulse"></div>
             <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-medium">
-              Contributing to the future of transportation technology. 
+              Contributing to the future of transportation technology.
               <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent font-bold">
                 Join me in revolutionizing the ride industry!
               </span>
@@ -371,7 +506,9 @@ export default function Index() {
                             <div className="w-3 h-3 bg-yellow-400 rounded-full hover:bg-yellow-500 transition-colors duration-300 animate-pulse delay-100"></div>
                             <div className="w-3 h-3 bg-green-400 rounded-full hover:bg-green-500 transition-colors duration-300 animate-pulse delay-200"></div>
                           </div>
-                          <div className="ml-4 text-xs text-gray-700 bg-white rounded px-3 py-1 shadow-sm border font-mono">🚗 u-ride.netlify.app</div>
+                          <div className="ml-4 text-xs text-gray-700 bg-white rounded px-3 py-1 shadow-sm border font-mono">
+                            🚗 u-ride.netlify.app
+                          </div>
                         </div>
                         {/* URide Website Screenshot */}
                         <div className="relative w-full h-[calc(100%-2rem)] overflow-hidden">
@@ -382,7 +519,9 @@ export default function Index() {
                                 <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center">
                                   <Car className="w-3 h-3 text-white" />
                                 </div>
-                                <span className="font-bold text-gray-800">URide</span>
+                                <span className="font-bold text-gray-800">
+                                  URide
+                                </span>
                               </div>
                               <div className="hidden md:flex items-center gap-4 text-xs text-gray-700">
                                 <span>Home</span>
@@ -390,8 +529,12 @@ export default function Index() {
                                 <span>About</span>
                               </div>
                               <div className="flex gap-1">
-                                <div className="px-2 py-1 bg-gray-100 rounded text-xs">Login</div>
-                                <div className="px-2 py-1 bg-blue-500 text-white rounded text-xs">Sign Up</div>
+                                <div className="px-2 py-1 bg-gray-100 rounded text-xs">
+                                  Login
+                                </div>
+                                <div className="px-2 py-1 bg-blue-500 text-white rounded text-xs">
+                                  Sign Up
+                                </div>
                               </div>
                             </div>
 
@@ -408,10 +551,15 @@ export default function Index() {
                                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
                                   Your Ride, Your Way
                                   <br />
-                                  <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">with URide</span>
+                                  <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
+                                    with URide
+                                  </span>
                                 </h1>
                                 <p className="text-base text-gray-200 mb-4 max-w-2xl leading-relaxed">
-                                  Experience seamless transportation with our innovative ride-hailing platform. Safe, reliable, and affordable rides at your fingertips.
+                                  Experience seamless transportation with our
+                                  innovative ride-hailing platform. Safe,
+                                  reliable, and affordable rides at your
+                                  fingertips.
                                 </p>
                                 <div className="flex gap-2">
                                   <div className="px-4 py-2 bg-green-500 text-white rounded-lg font-semibold text-sm hover:bg-green-600 transition-colors">
@@ -479,17 +627,21 @@ export default function Index() {
                         </h3>
                         <div className="flex items-center gap-2 mt-2">
                           <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                          <span className="text-green-600 font-semibold text-lg">Live & Open Source</span>
+                          <span className="text-green-600 font-semibold text-lg">
+                            Live & Open Source
+                          </span>
                           <ArrowRight className="w-4 h-4 text-green-600 animate-pulse" />
                         </div>
                       </div>
                     </div>
 
                     <p className="text-xl text-gray-700 leading-relaxed mb-8 font-medium">
-                      URide is a comprehensive ride-hailing platform that addresses the common problems
-                      in the transportation industry. Built with modern web technologies to provide
-                      a seamless experience for both riders and drivers, featuring real-time tracking,
-                      secure payments, and intelligent route optimization.
+                      URide is a comprehensive ride-hailing platform that
+                      addresses the common problems in the transportation
+                      industry. Built with modern web technologies to provide a
+                      seamless experience for both riders and drivers, featuring
+                      real-time tracking, secure payments, and intelligent route
+                      optimization.
                     </p>
                   </div>
 
@@ -502,7 +654,14 @@ export default function Index() {
                       Tech Stack & Features
                     </h4>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                      {["React", "Node.js", "Firebase", "Express", "Real-time Tracking", "Payment Integration"].map((tech, index) => (
+                      {[
+                        "React",
+                        "Node.js",
+                        "Firebase",
+                        "Express",
+                        "Real-time Tracking",
+                        "Payment Integration",
+                      ].map((tech, index) => (
                         <Badge
                           key={tech}
                           variant="outline"
@@ -526,18 +685,29 @@ export default function Index() {
                         Industry-Ready Solution!
                       </h4>
                       <p className="text-green-700 text-lg mb-4 leading-relaxed font-medium">
-                        This project demonstrates real-world application development with features like
-                        user authentication, real-time updates, payment processing, and scalable architecture.
-                        Perfect for understanding modern web development practices.
+                        This project demonstrates real-world application
+                        development with features like user authentication,
+                        real-time updates, payment processing, and scalable
+                        architecture. Perfect for understanding modern web
+                        development practices.
                       </p>
                       <div className="flex flex-wrap gap-3">
-                        <Badge variant="outline" className="text-green-600 border-green-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
+                        <Badge
+                          variant="outline"
+                          className="text-green-600 border-green-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300"
+                        >
                           Real-time Features
                         </Badge>
-                        <Badge variant="outline" className="text-green-600 border-green-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
+                        <Badge
+                          variant="outline"
+                          className="text-green-600 border-green-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300"
+                        >
                           Scalable Design
                         </Badge>
-                        <Badge variant="outline" className="text-green-600 border-green-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
+                        <Badge
+                          variant="outline"
+                          className="text-green-600 border-green-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300"
+                        >
                           Modern Tech Stack
                         </Badge>
                       </div>
@@ -549,7 +719,9 @@ export default function Index() {
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-700 hover:via-indigo-700 hover:to-blue-800 hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-lg py-6 px-8 font-semibold"
-                      onClick={() => window.open('https://u-ride.netlify.app/', '_blank')}
+                      onClick={() =>
+                        window.open("https://u-ride.netlify.app/", "_blank")
+                      }
                     >
                       <Globe className="w-5 h-5 mr-3" />
                       Visit Live App
@@ -559,7 +731,12 @@ export default function Index() {
                       variant="outline"
                       size="lg"
                       className="hover:scale-105 transition-all duration-300 border-2 border-green-300 text-green-700 hover:bg-green-50 hover:border-green-400 text-lg py-6 px-8 font-semibold shadow-lg hover:shadow-xl"
-                      onClick={() => window.open('https://github.com/UtsabGhoshal/cab-services.git', '_blank')}
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/UtsabGhoshal/cab-services.git",
+                          "_blank",
+                        )
+                      }
                     >
                       <Github className="w-5 h-5 mr-3" />
                       View Source Code
@@ -651,7 +828,9 @@ export default function Index() {
                             <div className="w-3 h-3 bg-yellow-400 rounded-full hover:bg-yellow-500 transition-colors duration-300 animate-pulse delay-100"></div>
                             <div className="w-3 h-3 bg-green-400 rounded-full hover:bg-green-500 transition-colors duration-300 animate-pulse delay-200"></div>
                           </div>
-                          <div className="ml-4 text-xs text-gray-700 bg-white rounded px-3 py-1 shadow-sm border font-mono">🪔 durga-puja-utsab.netlify.app</div>
+                          <div className="ml-4 text-xs text-gray-700 bg-white rounded px-3 py-1 shadow-sm border font-mono">
+                            🪔 durga-puja-utsab.netlify.app
+                          </div>
                           <div className="ml-auto flex gap-1">
                             <div className="w-4 h-2 bg-gray-300 rounded-sm"></div>
                             <div className="w-4 h-2 bg-gray-300 rounded-sm"></div>
@@ -666,17 +845,31 @@ export default function Index() {
                                 <div className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center">
                                   <div className="w-3 h-3 bg-white rounded-full"></div>
                                 </div>
-                                <span className="font-bold text-orange-900">Durga Puja</span>
+                                <span className="font-bold text-orange-900">
+                                  Durga Puja
+                                </span>
                               </div>
                               <div className="hidden md:flex items-center gap-6 text-sm text-orange-800">
-                                <span className="hover:text-orange-600 transition-colors">Home</span>
-                                <span className="hover:text-orange-600 transition-colors">Festival</span>
-                                <span className="hover:text-orange-600 transition-colors">Gallery</span>
-                                <span className="hover:text-orange-600 transition-colors">Blog</span>
+                                <span className="hover:text-orange-600 transition-colors">
+                                  Home
+                                </span>
+                                <span className="hover:text-orange-600 transition-colors">
+                                  Festival
+                                </span>
+                                <span className="hover:text-orange-600 transition-colors">
+                                  Gallery
+                                </span>
+                                <span className="hover:text-orange-600 transition-colors">
+                                  Blog
+                                </span>
                               </div>
                               <div className="flex gap-2">
-                                <div className="px-3 py-1 bg-orange-100 rounded text-xs text-orange-800">Stories</div>
-                                <div className="px-3 py-1 bg-orange-600 text-white rounded text-xs">Events</div>
+                                <div className="px-3 py-1 bg-orange-100 rounded text-xs text-orange-800">
+                                  Stories
+                                </div>
+                                <div className="px-3 py-1 bg-orange-600 text-white rounded text-xs">
+                                  Events
+                                </div>
                               </div>
                             </div>
 
@@ -691,11 +884,17 @@ export default function Index() {
                                   </span>
                                 </div>
                                 <h1 className="text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
-                                  Experience the Glory<br />of
-                                  <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">Durga Puja</span>
+                                  Experience the Glory
+                                  <br />
+                                  of
+                                  <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">
+                                    Durga Puja
+                                  </span>
                                 </h1>
                                 <p className="text-xl text-orange-100 mb-8 max-w-3xl leading-relaxed">
-                                  Immerse yourself in the divine festivities, rich traditions, and cultural heritage of Bengal's most celebrated festival
+                                  Immerse yourself in the divine festivities,
+                                  rich traditions, and cultural heritage of
+                                  Bengal's most celebrated festival
                                 </p>
                                 <div className="flex gap-4">
                                   <div className="px-6 py-3 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-700 transition-colors">
@@ -778,16 +977,20 @@ export default function Index() {
                         </h3>
                         <div className="flex items-center gap-2 mt-2">
                           <div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
-                          <span className="text-orange-600 font-semibold text-lg">Cultural Heritage</span>
+                          <span className="text-orange-600 font-semibold text-lg">
+                            Cultural Heritage
+                          </span>
                           <MousePointer className="w-4 h-4 text-orange-600 animate-pulse" />
                         </div>
                       </div>
                     </div>
 
                     <p className="text-xl text-gray-700 leading-relaxed mb-8 font-medium">
-                      A beautifully crafted website celebrating the divine festival of Durga Puja.
-                      This cultural blog showcases the rich traditions, vibrant celebrations, and spiritual significance
-                      of Bengal's most beloved festival through stunning visuals and engaging storytelling.
+                      A beautifully crafted website celebrating the divine
+                      festival of Durga Puja. This cultural blog showcases the
+                      rich traditions, vibrant celebrations, and spiritual
+                      significance of Bengal's most beloved festival through
+                      stunning visuals and engaging storytelling.
                     </p>
                   </div>
 
@@ -800,7 +1003,14 @@ export default function Index() {
                       Technologies & Features
                     </h4>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                      {["HTML", "CSS", "JavaScript", "Responsive", "Cultural Blog", "Modern Design"].map((tech, index) => (
+                      {[
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "Responsive",
+                        "Cultural Blog",
+                        "Modern Design",
+                      ].map((tech, index) => (
                         <Badge
                           key={tech}
                           variant="outline"
@@ -824,17 +1034,28 @@ export default function Index() {
                         Celebrate Culture & Code!
                       </h4>
                       <p className="text-orange-700 text-lg mb-4 leading-relaxed font-medium">
-                        Experience the divine celebration through this interactive website! This project beautifully
-                        blends cultural heritage with modern web development, showcasing festival traditions and stories.
+                        Experience the divine celebration through this
+                        interactive website! This project beautifully blends
+                        cultural heritage with modern web development,
+                        showcasing festival traditions and stories.
                       </p>
                       <div className="flex flex-wrap gap-3">
-                        <Badge variant="outline" className="text-orange-600 border-orange-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
+                        <Badge
+                          variant="outline"
+                          className="text-orange-600 border-orange-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300"
+                        >
                           Cultural Stories
                         </Badge>
-                        <Badge variant="outline" className="text-orange-600 border-orange-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
+                        <Badge
+                          variant="outline"
+                          className="text-orange-600 border-orange-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300"
+                        >
                           Festival Gallery
                         </Badge>
-                        <Badge variant="outline" className="text-orange-600 border-orange-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
+                        <Badge
+                          variant="outline"
+                          className="text-orange-600 border-orange-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300"
+                        >
                           Traditional Design
                         </Badge>
                       </div>
@@ -846,7 +1067,12 @@ export default function Index() {
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-orange-600 via-red-600 to-orange-700 hover:from-orange-700 hover:via-red-700 hover:to-orange-800 hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-lg py-6 px-8 font-semibold"
-                      onClick={() => window.open('https://durga-puja-utsab.netlify.app/', '_blank')}
+                      onClick={() =>
+                        window.open(
+                          "https://durga-puja-utsab.netlify.app/",
+                          "_blank",
+                        )
+                      }
                     >
                       <Globe className="w-5 h-5 mr-3" />
                       Visit Live Website
@@ -856,7 +1082,12 @@ export default function Index() {
                       variant="outline"
                       size="lg"
                       className="hover:scale-105 transition-all duration-300 border-2 border-orange-300 text-orange-700 hover:bg-orange-50 hover:border-orange-400 text-lg py-6 px-8 font-semibold shadow-lg hover:shadow-xl"
-                      onClick={() => window.open('https://github.com/UtsabGhoshal/Durga-Puja-Blog.git', '_blank')}
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/UtsabGhoshal/Durga-Puja-Blog.git",
+                          "_blank",
+                        )
+                      }
                     >
                       <Github className="w-5 h-5 mr-3" />
                       View Source Code
@@ -888,58 +1119,81 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 overflow-hidden relative">
+      <section
+        id="contact"
+        className="py-20 px-4 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 overflow-hidden relative"
+      >
         <div className="absolute inset-0">
-          <div className={"absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.05\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"2\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"}></div>
+          <div
+            className={
+              'absolute top-0 left-0 w-full h-full bg-[url(\'data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\')] opacity-20'
+            }
+          ></div>
         </div>
-        
+
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="absolute inset-0 bg-white/5 rounded-3xl transform rotate-3 scale-105 blur-sm"></div>
           <div className="relative z-10 p-8">
             <div className="flex items-center justify-center gap-2 mb-6">
               <Heart className="w-8 h-8 text-pink-300 animate-pulse" />
-              <h2 className="text-3xl sm:text-4xl font-bold text-white animate-fade-in">Let's Create Something Amazing!</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white animate-fade-in">
+                Let's Create Something Amazing!
+              </h2>
               <Heart className="w-8 h-8 text-pink-300 animate-pulse" />
             </div>
-            
+
             <p className="text-lg sm:text-xl text-blue-100 mb-8 max-w-2xl mx-auto animate-fade-in leading-relaxed">
-              I'm always excited to connect with fellow developers, work on innovative projects, 
-              and contribute to meaningful solutions. Whether it's collaboration, mentorship, or just a friendly chat about code!
+              I'm always excited to connect with fellow developers, work on
+              innovative projects, and contribute to meaningful solutions.
+              Whether it's collaboration, mentorship, or just a friendly chat
+              about code!
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
-              <Button 
-                size="lg" 
-                variant="secondary" 
+              <Button
+                size="lg"
+                variant="secondary"
                 className="hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl bg-white text-blue-600 hover:bg-gray-50"
-                onClick={() => window.location.href = 'mailto:utsab.ghoshal04@gmail.com?subject=Hello%20Utsab!&body=Hi%20Utsab,%0A%0AI%20found%20your%20portfolio%20and%20would%20love%20to%20connect!%0A%0A'}
+                onClick={() =>
+                  (window.location.href =
+                    "mailto:utsab.ghoshal04@gmail.com?subject=Hello%20Utsab!&body=Hi%20Utsab,%0A%0AI%20found%20your%20portfolio%20and%20would%20love%20to%20connect!%0A%0A")
+                }
               >
                 <Mail className="w-4 h-4 mr-2" />
                 Send Email
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
+              <Button
+                size="lg"
+                variant="outline"
                 className="text-white border-white hover:bg-white hover:text-blue-600 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                onClick={() => window.open('https://github.com/UtsabGhoshal', '_blank')}
+                onClick={() =>
+                  window.open("https://github.com/UtsabGhoshal", "_blank")
+                }
               >
                 <Github className="w-4 h-4 mr-2" />
                 GitHub Profile
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
+              <Button
+                size="lg"
+                variant="outline"
                 className="text-white border-white hover:bg-white hover:text-blue-600 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                onClick={() => window.open('https://www.linkedin.com/in/utsab-ghoshal-18a430287/', '_blank')}
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/utsab-ghoshal-18a430287/",
+                    "_blank",
+                  )
+                }
               >
                 <Linkedin className="w-4 h-4 mr-2" />
                 LinkedIn
               </Button>
             </div>
-            
+
             <div className="mt-8 p-4 bg-white/10 rounded-xl backdrop-blur-sm">
               <p className="text-blue-100 text-sm">
-                📧 <strong>utsab.ghoshal04@gmail.com</strong> • 🎓 <strong>JIS University</strong> • 💻 <strong>Computer Science Student</strong>
+                📧 <strong>utsab.ghoshal04@gmail.com</strong> • 🎓{" "}
+                <strong>JIS University</strong> • 💻{" "}
+                <strong>Computer Science Student</strong>
               </p>
             </div>
           </div>
@@ -961,9 +1215,11 @@ export default function Index() {
                 </h3>
               </div>
               <p className="text-gray-400 leading-relaxed">
-                Building the future, one line of code at a time. 
+                Building the future, one line of code at a time.
                 <br />
-                <span className="text-blue-300">Always learning, always growing.</span>
+                <span className="text-blue-300">
+                  Always learning, always growing.
+                </span>
               </p>
             </div>
             <div className="animate-slide-in-left">
@@ -972,10 +1228,38 @@ export default function Index() {
                 Quick Links
               </h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#about" className="hover:text-white transition-colors duration-300 hover:underline">About Me</a></li>
-                <li><a href="#journey" className="hover:text-white transition-colors duration-300 hover:underline">My Journey</a></li>
-                <li><a href="#vision" className="hover:text-white transition-colors duration-300 hover:underline">Future Vision</a></li>
-                <li><a href="#contact" className="hover:text-white transition-colors duration-300 hover:underline">Let's Connect</a></li>
+                <li>
+                  <a
+                    href="#about"
+                    className="hover:text-white transition-colors duration-300 hover:underline"
+                  >
+                    About Me
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#journey"
+                    className="hover:text-white transition-colors duration-300 hover:underline"
+                  >
+                    My Journey
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#vision"
+                    className="hover:text-white transition-colors duration-300 hover:underline"
+                  >
+                    Future Vision
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    className="hover:text-white transition-colors duration-300 hover:underline"
+                  >
+                    Let's Connect
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="animate-slide-in-right">
@@ -984,27 +1268,36 @@ export default function Index() {
                 Connect With Me
               </h4>
               <div className="flex gap-4">
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
+                <Button
+                  variant="ghost"
+                  size="icon"
                   className="text-gray-400 hover:text-white hover:scale-110 transition-all duration-300 hover:bg-blue-600"
-                  onClick={() => window.open('https://github.com/UtsabGhoshal', '_blank')}
+                  onClick={() =>
+                    window.open("https://github.com/UtsabGhoshal", "_blank")
+                  }
                 >
                   <Github className="w-5 h-5" />
                 </Button>
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
+                <Button
+                  variant="ghost"
+                  size="icon"
                   className="text-gray-400 hover:text-white hover:scale-110 transition-all duration-300 hover:bg-blue-600"
-                  onClick={() => window.open('https://www.linkedin.com/in/utsab-ghoshal-18a430287/', '_blank')}
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/utsab-ghoshal-18a430287/",
+                      "_blank",
+                    )
+                  }
                 >
                   <Linkedin className="w-5 h-5" />
                 </Button>
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
+                <Button
+                  variant="ghost"
+                  size="icon"
                   className="text-gray-400 hover:text-white hover:scale-110 transition-all duration-300 hover:bg-blue-600"
-                  onClick={() => window.location.href = 'mailto:utsab.ghoshal04@gmail.com'}
+                  onClick={() =>
+                    (window.location.href = "mailto:utsab.ghoshal04@gmail.com")
+                  }
                 >
                   <Mail className="w-5 h-5" />
                 </Button>
@@ -1016,7 +1309,7 @@ export default function Index() {
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 animate-fade-in">
             <p className="flex items-center justify-center gap-2">
-              &copy; 2024 Utsab Ghoshal. Built with 
+              &copy; 2024 Utsab Ghoshal. Built with
               <Heart className="w-4 h-4 text-red-400" />
               using React, TypeScript & Tailwind CSS.
             </p>
