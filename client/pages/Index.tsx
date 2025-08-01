@@ -502,7 +502,7 @@ export default function Index() {
                       Tech Stack & Features
                     </h4>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                      {["React", "Node.js", "MongoDB", "Express", "Real-time Tracking", "Payment Integration"].map((tech, index) => (
+                      {["React", "Node.js", "Firebase", "Express", "Real-time Tracking", "Payment Integration"].map((tech, index) => (
                         <Badge
                           key={tech}
                           variant="outline"
