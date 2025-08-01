@@ -792,19 +792,19 @@ export default function Index() {
                   </div>
 
                   {/* Enhanced Tech Stack */}
-                  <div className="bg-gradient-to-r from-gray-50 to-purple-50 p-6 rounded-2xl border border-purple-200">
+                  <div className="bg-gradient-to-r from-gray-50 to-orange-50 p-6 rounded-2xl border border-orange-200">
                     <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-3 text-lg">
-                      <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                      <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
                         <Code className="w-5 h-5 text-white" />
                       </div>
                       Technologies & Features
                     </h4>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                      {["HTML", "CSS", "JavaScript", "Responsive", "Travel UI", "Modern Design"].map((tech, index) => (
+                      {["HTML", "CSS", "JavaScript", "Responsive", "Cultural Blog", "Modern Design"].map((tech, index) => (
                         <Badge
                           key={tech}
                           variant="outline"
-                          className="justify-center py-3 px-4 hover:scale-110 hover:bg-purple-50 transition-all duration-300 border-purple-300 text-purple-700 font-semibold text-sm"
+                          className="justify-center py-3 px-4 hover:scale-110 hover:bg-orange-50 transition-all duration-300 border-orange-300 text-orange-700 font-semibold text-sm"
                           style={{ animationDelay: `${index * 0.1}s` }}
                         >
                           {tech}
