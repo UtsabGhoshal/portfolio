@@ -605,27 +605,27 @@ export default function Index() {
           <div className="text-center mb-20 animate-fade-in">
             <div className="flex items-center justify-center gap-3 mb-6">
               <div className="relative">
-                <Camera className="w-10 h-10 text-purple-600 animate-bounce" />
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-purple-400 rounded-full animate-ping"></div>
+                <Camera className="w-10 h-10 text-orange-600 animate-bounce" />
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-orange-400 rounded-full animate-ping"></div>
               </div>
-              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">
                 Featured Website Project
               </h2>
               <div className="relative">
-                <ImageIcon className="w-10 h-10 text-purple-600 animate-bounce delay-300" />
-                <div className="absolute -top-1 -left-1 w-4 h-4 bg-purple-400 rounded-full animate-ping delay-500"></div>
+                <ImageIcon className="w-10 h-10 text-orange-600 animate-bounce delay-300" />
+                <div className="absolute -top-1 -left-1 w-4 h-4 bg-orange-400 rounded-full animate-ping delay-500"></div>
               </div>
             </div>
-            <div className="w-32 h-1.5 bg-gradient-to-r from-purple-600 via-indigo-500 to-pink-600 mx-auto mb-8 rounded-full animate-pulse"></div>
+            <div className="w-32 h-1.5 bg-gradient-to-r from-orange-600 via-red-500 to-pink-600 mx-auto mb-8 rounded-full animate-pulse"></div>
             <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-medium">
-              Showcasing my web development skills through beautiful, functional websites.
-              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent font-bold">
-                Experience the live projects!
+              Celebrating culture and tradition through modern web development.
+              <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent font-bold">
+                Experience the divine festivities!
               </span>
             </p>
           </div>
 
-          {/* Beyond Lenses Showcase */}
+          {/* Durga Puja Website Showcase */}
           <div className="max-w-6xl mx-auto">
             <Card className="group hover:shadow-2xl transition-all duration-700 hover:-translate-y-3 animate-scale-in bg-white/80 backdrop-blur-sm border-2 border-purple-200/50 relative overflow-hidden hover:border-purple-300/70 hover:bg-white/90">
               {/* Animated Border Effect */}
