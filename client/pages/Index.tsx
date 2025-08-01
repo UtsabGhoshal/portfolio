@@ -845,8 +845,8 @@ export default function Index() {
                   <div className="flex flex-col sm:flex-row gap-4 pt-6">
                     <Button
                       size="lg"
-                      className="bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-700 hover:from-purple-700 hover:via-indigo-700 hover:to-purple-800 hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-lg py-6 px-8 font-semibold"
-                      onClick={() => window.open('https://beyond-lenses.netlify.app/', '_blank')}
+                      className="bg-gradient-to-r from-orange-600 via-red-600 to-orange-700 hover:from-orange-700 hover:via-red-700 hover:to-orange-800 hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-lg py-6 px-8 font-semibold"
+                      onClick={() => window.open('https://durga-puja-utsab.netlify.app/', '_blank')}
                     >
                       <Globe className="w-5 h-5 mr-3" />
                       Visit Live Website
@@ -855,8 +855,8 @@ export default function Index() {
                     <Button
                       variant="outline"
                       size="lg"
-                      className="hover:scale-105 transition-all duration-300 border-2 border-purple-300 text-purple-700 hover:bg-purple-50 hover:border-purple-400 text-lg py-6 px-8 font-semibold shadow-lg hover:shadow-xl"
-                      onClick={() => window.open('https://github.com/UtsabGhoshal/beyond-lenses', '_blank')}
+                      className="hover:scale-105 transition-all duration-300 border-2 border-orange-300 text-orange-700 hover:bg-orange-50 hover:border-orange-400 text-lg py-6 px-8 font-semibold shadow-lg hover:shadow-xl"
+                      onClick={() => window.open('https://github.com/UtsabGhoshal/Durga-Puja-Blog.git', '_blank')}
                     >
                       <Github className="w-5 h-5 mr-3" />
                       View Source Code
