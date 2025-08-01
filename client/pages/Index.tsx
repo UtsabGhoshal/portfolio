@@ -640,7 +640,7 @@ export default function Index() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 relative z-10">
                 {/* Website Preview */}
                 <div className="relative overflow-hidden">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-purple-100 via-indigo-100 to-pink-100 flex items-center justify-center group-hover:scale-105 transition-transform duration-700 relative">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-orange-100 via-red-100 to-pink-100 flex items-center justify-center group-hover:scale-105 transition-transform duration-700 relative">
                     {/* Website Preview Frame with Browser */}
                     <div className="w-full h-full bg-gray-900 rounded-lg p-2 shadow-2xl transform group-hover:rotate-1 transition-transform duration-700">
                       <div className="w-full h-full bg-white rounded-md overflow-hidden relative group-hover:shadow-inner transition-shadow duration-500">
@@ -651,7 +651,7 @@ export default function Index() {
                             <div className="w-3 h-3 bg-yellow-400 rounded-full hover:bg-yellow-500 transition-colors duration-300 animate-pulse delay-100"></div>
                             <div className="w-3 h-3 bg-green-400 rounded-full hover:bg-green-500 transition-colors duration-300 animate-pulse delay-200"></div>
                           </div>
-                          <div className="ml-4 text-xs text-gray-700 bg-white rounded px-3 py-1 shadow-sm border font-mono">🌐 beyond-lenses.netlify.app</div>
+                          <div className="ml-4 text-xs text-gray-700 bg-white rounded px-3 py-1 shadow-sm border font-mono">🪔 durga-puja-utsab.netlify.app</div>
                           <div className="ml-auto flex gap-1">
                             <div className="w-4 h-2 bg-gray-300 rounded-sm"></div>
                             <div className="w-4 h-2 bg-gray-300 rounded-sm"></div>
@@ -659,50 +659,50 @@ export default function Index() {
                         </div>
                         {/* Actual Website Screenshot */}
                         <div className="relative w-full h-[calc(100%-2rem)] overflow-hidden">
-                          <div className="w-full h-full bg-gradient-to-br from-green-900 via-gray-800 to-gray-900 relative">
+                          <div className="w-full h-full bg-gradient-to-br from-orange-800 via-red-900 to-amber-900 relative">
                             {/* Navigation Bar */}
-                            <div className="absolute top-0 left-0 w-full h-16 bg-white/95 backdrop-blur-sm flex items-center justify-between px-6 z-10">
+                            <div className="absolute top-0 left-0 w-full h-16 bg-orange-50/95 backdrop-blur-sm flex items-center justify-between px-6 z-10">
                               <div className="flex items-center gap-2">
-                                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                <div className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center">
                                   <div className="w-3 h-3 bg-white rounded-full"></div>
                                 </div>
-                                <span className="font-bold text-gray-800">Beyond Lenses</span>
+                                <span className="font-bold text-orange-900">Durga Puja</span>
                               </div>
-                              <div className="hidden md:flex items-center gap-6 text-sm text-gray-700">
-                                <span className="hover:text-green-600 transition-colors">Home</span>
-                                <span className="hover:text-green-600 transition-colors">Destinations</span>
-                                <span className="hover:text-green-600 transition-colors">Tours</span>
-                                <span className="hover:text-green-600 transition-colors">About</span>
+                              <div className="hidden md:flex items-center gap-6 text-sm text-orange-800">
+                                <span className="hover:text-orange-600 transition-colors">Home</span>
+                                <span className="hover:text-orange-600 transition-colors">Festival</span>
+                                <span className="hover:text-orange-600 transition-colors">Gallery</span>
+                                <span className="hover:text-orange-600 transition-colors">Blog</span>
                               </div>
                               <div className="flex gap-2">
-                                <div className="px-3 py-1 bg-gray-100 rounded text-xs">Login</div>
-                                <div className="px-3 py-1 bg-green-500 text-white rounded text-xs">Sign Up</div>
+                                <div className="px-3 py-1 bg-orange-100 rounded text-xs text-orange-800">Stories</div>
+                                <div className="px-3 py-1 bg-orange-600 text-white rounded text-xs">Events</div>
                               </div>
                             </div>
 
                             {/* Hero Section */}
-                            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center">
-                              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 via-gray-800/50 to-green-900/70"></div>
+                            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1605022287542-9c55fbe5ceb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center">
+                              <div className="absolute inset-0 bg-gradient-to-br from-orange-900/80 via-red-900/70 to-amber-900/80"></div>
                               <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-                                <div className="mb-4 px-4 py-2 bg-green-500/20 backdrop-blur-sm rounded-full border border-green-400/30">
-                                  <span className="text-green-300 text-sm font-medium flex items-center gap-2">
-                                    <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                                    Authentic Bengal Experience
+                                <div className="mb-4 px-4 py-2 bg-orange-500/20 backdrop-blur-sm rounded-full border border-orange-400/30">
+                                  <span className="text-orange-200 text-sm font-medium flex items-center gap-2">
+                                    <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></span>
+                                    Divine Celebration
                                   </span>
                                 </div>
                                 <h1 className="text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
-                                  Discover the Beauty<br />of
-                                  <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">West Bengal</span>
+                                  Experience the Glory<br />of
+                                  <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">Durga Puja</span>
                                 </h1>
-                                <p className="text-xl text-gray-200 mb-8 max-w-3xl leading-relaxed">
-                                  Experience the diverse cultures, breathtaking landscapes, and rich heritage that make West Bengal an unforgettable destination
+                                <p className="text-xl text-orange-100 mb-8 max-w-3xl leading-relaxed">
+                                  Immerse yourself in the divine festivities, rich traditions, and cultural heritage of Bengal's most celebrated festival
                                 </p>
                                 <div className="flex gap-4">
-                                  <div className="px-6 py-3 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transition-colors">
-                                    Explore Destinations →
+                                  <div className="px-6 py-3 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-700 transition-colors">
+                                    Explore Festival →
                                   </div>
-                                  <div className="px-6 py-3 border border-white/30 text-white rounded-lg font-semibold backdrop-blur-sm hover:bg-white/10 transition-colors">
-                                    Plan Your Journey
+                                  <div className="px-6 py-3 border border-orange-300/50 text-orange-100 rounded-lg font-semibold backdrop-blur-sm hover:bg-orange-500/20 transition-colors">
+                                    Read Stories
                                   </div>
                                 </div>
                               </div>
@@ -710,24 +710,24 @@ export default function Index() {
 
                             {/* Subtle animations */}
                             <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-1000">
-                              <div className="absolute top-20 left-10 w-32 h-32 bg-green-400/20 rounded-full blur-xl animate-pulse"></div>
-                              <div className="absolute bottom-20 right-10 w-40 h-40 bg-emerald-400/20 rounded-full blur-xl animate-pulse delay-1000"></div>
+                              <div className="absolute top-20 left-10 w-32 h-32 bg-orange-400/20 rounded-full blur-xl animate-pulse"></div>
+                              <div className="absolute bottom-20 right-10 w-40 h-40 bg-red-400/20 rounded-full blur-xl animate-pulse delay-1000"></div>
                             </div>
                           </div>
                           {/* Enhanced Overlay with Parallax Effect */}
-                          <div className="absolute inset-0 bg-gradient-to-t from-purple-600/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                          <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 delay-200"></div>
+                          <div className="absolute inset-0 bg-gradient-to-t from-orange-600/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                          <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 delay-200"></div>
 
                           {/* Floating Animation Elements */}
-                          <div className="absolute top-4 left-4 w-3 h-3 bg-green-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-bounce transition-opacity duration-500 delay-300"></div>
-                          <div className="absolute top-8 right-8 w-2 h-2 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500 delay-500"></div>
-                          <div className="absolute bottom-6 left-6 w-4 h-4 bg-pink-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-500 delay-700"></div>
+                          <div className="absolute top-4 left-4 w-3 h-3 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-bounce transition-opacity duration-500 delay-300"></div>
+                          <div className="absolute top-8 right-8 w-2 h-2 bg-red-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500 delay-500"></div>
+                          <div className="absolute bottom-6 left-6 w-4 h-4 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-500 delay-700"></div>
                         </div>
                       </div>
                     </div>
                     {/* Enhanced Multi-layer Overlay Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div className="absolute inset-0 bg-radial-gradient from-transparent via-indigo-400/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 delay-200"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-orange-600/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <div className="absolute inset-0 bg-radial-gradient from-transparent via-red-400/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 delay-200"></div>
                   </div>
 
                   {/* Enhanced Floating Elements */}
