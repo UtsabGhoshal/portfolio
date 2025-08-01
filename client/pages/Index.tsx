@@ -352,29 +352,90 @@ export default function Index() {
             <Card className="group hover:shadow-2xl transition-all duration-700 hover:-translate-y-3 animate-scale-in bg-white/80 backdrop-blur-sm border-2 border-green-200/50 relative overflow-hidden">
               {/* Animated Border Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-emerald-400 to-blue-400 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-500 animate-pulse"></div>
-              
+
               {/* Enhanced Decorative Elements */}
               <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-green-300/30 to-emerald-300/30 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-500"></div>
               <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-br from-blue-300/30 to-green-300/30 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-500"></div>
-              
+
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 relative z-10">
                 {/* Enhanced Project Image/Preview */}
                 <div className="relative overflow-hidden">
                   <div className="aspect-[4/3] bg-gradient-to-br from-green-100 via-emerald-100 to-blue-100 flex items-center justify-center group-hover:scale-105 transition-transform duration-700 relative">
-                    <img 
-                      src="https://cdn.builder.io/api/v1/image/assets%2Ffb709f066b274ce4b391d7819e0c0170%2F0d78a96252884627a1d6bc56702f954f?format=webp&width=800"
-                      alt="Cab Services App Preview"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    />
+                    {/* URide App Preview Frame */}
+                    <div className="w-full h-full bg-gray-900 rounded-lg p-2 shadow-2xl transform group-hover:rotate-1 transition-transform duration-700">
+                      <div className="w-full h-full bg-white rounded-md overflow-hidden relative group-hover:shadow-inner transition-shadow duration-500">
+                        {/* Enhanced Browser Bar */}
+                        <div className="h-8 bg-gradient-to-r from-gray-100 to-gray-200 flex items-center px-4 border-b border-gray-300">
+                          <div className="flex gap-2">
+                            <div className="w-3 h-3 bg-red-400 rounded-full hover:bg-red-500 transition-colors duration-300 animate-pulse"></div>
+                            <div className="w-3 h-3 bg-yellow-400 rounded-full hover:bg-yellow-500 transition-colors duration-300 animate-pulse delay-100"></div>
+                            <div className="w-3 h-3 bg-green-400 rounded-full hover:bg-green-500 transition-colors duration-300 animate-pulse delay-200"></div>
+                          </div>
+                          <div className="ml-4 text-xs text-gray-700 bg-white rounded px-3 py-1 shadow-sm border font-mono">🚗 u-ride.netlify.app</div>
+                        </div>
+                        {/* URide Website Screenshot */}
+                        <div className="relative w-full h-[calc(100%-2rem)] overflow-hidden">
+                          <div className="w-full h-full bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 relative">
+                            {/* Navigation Bar */}
+                            <div className="absolute top-0 left-0 w-full h-12 bg-white/95 backdrop-blur-sm flex items-center justify-between px-4 z-10 text-xs">
+                              <div className="flex items-center gap-2">
+                                <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center">
+                                  <Car className="w-3 h-3 text-white" />
+                                </div>
+                                <span className="font-bold text-gray-800">URide</span>
+                              </div>
+                              <div className="hidden md:flex items-center gap-4 text-xs text-gray-700">
+                                <span>Home</span>
+                                <span>Book Ride</span>
+                                <span>About</span>
+                              </div>
+                              <div className="flex gap-1">
+                                <div className="px-2 py-1 bg-gray-100 rounded text-xs">Login</div>
+                                <div className="px-2 py-1 bg-blue-500 text-white rounded text-xs">Sign Up</div>
+                              </div>
+                            </div>
+
+                            {/* Hero Section */}
+                            <div className="absolute inset-0 pt-12">
+                              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 via-indigo-700/90 to-purple-800/90"></div>
+                              <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-2">
+                                <div className="mb-2 px-2 py-1 bg-blue-500/20 backdrop-blur-sm rounded-full border border-blue-400/30">
+                                  <span className="text-blue-200 text-xs font-medium flex items-center gap-1">
+                                    <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse"></span>
+                                    Revolutionizing Ride Hailing
+                                  </span>
+                                </div>
+                                <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
+                                  Your Ride, Your Way
+                                  <br />
+                                  <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">with URide</span>
+                                </h1>
+                                <p className="text-base text-gray-200 mb-4 max-w-2xl leading-relaxed">
+                                  Experience seamless transportation with our innovative ride-hailing platform. Safe, reliable, and affordable rides at your fingertips.
+                                </p>
+                                <div className="flex gap-2">
+                                  <div className="px-4 py-2 bg-green-500 text-white rounded-lg font-semibold text-sm hover:bg-green-600 transition-colors">
+                                    Book Now →
+                                  </div>
+                                  <div className="px-4 py-2 border border-white/30 text-white rounded-lg font-semibold backdrop-blur-sm hover:bg-white/10 transition-colors text-sm">
+                                    Learn More
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     {/* Overlay Effect */}
                     <div className="absolute inset-0 bg-gradient-to-t from-green-600/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
-                  
+
                   {/* Enhanced Floating Elements */}
                   <div className="absolute top-6 left-6 flex flex-col gap-3">
                     <Badge className="bg-white/95 text-green-700 border border-green-300 shadow-lg backdrop-blur-sm hover:scale-105 transition-transform duration-300">
                       <CheckCircle className="w-4 h-4 mr-2 text-green-600" />
-                      Production Ready
+                      Live & Deployed
                     </Badge>
                     <Badge className="bg-white/95 text-blue-700 border border-blue-300 shadow-lg backdrop-blur-sm hover:scale-105 transition-transform duration-300">
                       <Clock className="w-4 h-4 mr-2 text-blue-600" />
@@ -382,7 +443,7 @@ export default function Index() {
                     </Badge>
                     <Badge className="bg-white/95 text-purple-700 border border-purple-300 shadow-lg backdrop-blur-sm hover:scale-105 transition-transform duration-300">
                       <Zap className="w-4 h-4 mr-2 text-purple-600" />
-                      High Performance
+                      Industry Solution
                     </Badge>
                   </div>
 
@@ -414,20 +475,21 @@ export default function Index() {
                       </div>
                       <div>
                         <h3 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-green-700 to-emerald-700 bg-clip-text text-transparent">
-                          Cab-services
+                          URide
                         </h3>
                         <div className="flex items-center gap-2 mt-2">
                           <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                          <span className="text-green-600 font-semibold text-lg">Open for Contributions</span>
+                          <span className="text-green-600 font-semibold text-lg">Live & Open Source</span>
                           <ArrowRight className="w-4 h-4 text-green-600 animate-pulse" />
                         </div>
                       </div>
                     </div>
-                    
+
                     <p className="text-xl text-gray-700 leading-relaxed mb-8 font-medium">
-                      This project is set up to solve the common problems of ride industry. 
-                      A comprehensive solution that addresses real-world transportation challenges 
-                      with modern technology and user-centric design.
+                      URide is a comprehensive ride-hailing platform that addresses the common problems
+                      in the transportation industry. Built with modern web technologies to provide
+                      a seamless experience for both riders and drivers, featuring real-time tracking,
+                      secure payments, and intelligent route optimization.
                     </p>
                   </div>
 
@@ -440,10 +502,10 @@ export default function Index() {
                       Tech Stack & Features
                     </h4>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                      {["React", "Node.js", "MongoDB", "Express", "JavaScript", "CSS"].map((tech, index) => (
-                        <Badge 
-                          key={tech} 
-                          variant="outline" 
+                      {["React", "Node.js", "MongoDB", "Express", "Real-time Tracking", "Payment Integration"].map((tech, index) => (
+                        <Badge
+                          key={tech}
+                          variant="outline"
                           className="justify-center py-3 px-4 hover:scale-110 hover:bg-green-50 transition-all duration-300 border-green-300 text-green-700 font-semibold text-sm"
                           style={{ animationDelay: `${index * 0.1}s` }}
                         >
@@ -461,21 +523,22 @@ export default function Index() {
                         <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center">
                           <Heart className="w-5 h-5 text-white animate-pulse" />
                         </div>
-                        Beginners Welcome!
+                        Industry-Ready Solution!
                       </h4>
                       <p className="text-green-700 text-lg mb-4 leading-relaxed font-medium">
-                        Perfect for developers who want to contribute to real-world projects. 
-                        All skill levels are encouraged to add features and improve the platform.
+                        This project demonstrates real-world application development with features like
+                        user authentication, real-time updates, payment processing, and scalable architecture.
+                        Perfect for understanding modern web development practices.
                       </p>
                       <div className="flex flex-wrap gap-3">
                         <Badge variant="outline" className="text-green-600 border-green-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
-                          Good First Issues
+                          Real-time Features
                         </Badge>
                         <Badge variant="outline" className="text-green-600 border-green-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
-                          Beginner Friendly
+                          Scalable Design
                         </Badge>
                         <Badge variant="outline" className="text-green-600 border-green-400 bg-white/80 text-sm py-2 px-4 hover:scale-105 transition-transform duration-300">
-                          Mentorship Available
+                          Modern Tech Stack
                         </Badge>
                       </div>
                     </div>
@@ -483,23 +546,23 @@ export default function Index() {
 
                   {/* Enhanced Action Buttons */}
                   <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                    <Button 
-                      size="lg" 
-                      className="bg-gradient-to-r from-green-600 via-emerald-600 to-green-700 hover:from-green-700 hover:via-emerald-700 hover:to-green-800 hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-lg py-6 px-8 font-semibold"
-                      onClick={() => window.open('https://github.com/UtsabGhoshal/cab-services', '_blank')}
+                    <Button
+                      size="lg"
+                      className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-700 hover:via-indigo-700 hover:to-blue-800 hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-lg py-6 px-8 font-semibold"
+                      onClick={() => window.open('https://u-ride.netlify.app/', '_blank')}
+                    >
+                      <Globe className="w-5 h-5 mr-3" />
+                      Visit Live App
+                      <ExternalLink className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="hover:scale-105 transition-all duration-300 border-2 border-green-300 text-green-700 hover:bg-green-50 hover:border-green-400 text-lg py-6 px-8 font-semibold shadow-lg hover:shadow-xl"
+                      onClick={() => window.open('https://github.com/UtsabGhoshal/cab-services.git', '_blank')}
                     >
                       <Github className="w-5 h-5 mr-3" />
-                      View Repository
-                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      size="lg" 
-                      className="hover:scale-105 transition-all duration-300 border-2 border-green-300 text-green-700 hover:bg-green-50 hover:border-green-400 text-lg py-6 px-8 font-semibold shadow-lg hover:shadow-xl"
-                      onClick={() => window.open('https://github.com/UtsabGhoshal/cab-services/fork', '_blank')}
-                    >
-                      <GitFork className="w-5 h-5 mr-3" />
-                      Fork & Contribute
+                      View Source Code
                     </Button>
                   </div>
 
@@ -507,12 +570,12 @@ export default function Index() {
                   <div className="flex items-center justify-between pt-6 border-t border-green-200">
                     <div className="flex items-center gap-8 text-sm text-gray-600">
                       <div className="flex items-center gap-2 hover:text-green-600 transition-colors duration-300 cursor-pointer group">
-                        <Star className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                        <span className="font-medium">Star the repo</span>
+                        <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                        <span className="font-medium">Try live app</span>
                       </div>
                       <div className="flex items-center gap-2 hover:text-green-600 transition-colors duration-300 cursor-pointer group">
-                        <Eye className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                        <span className="font-medium">Watch updates</span>
+                        <Star className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                        <span className="font-medium">Star the repo</span>
                       </div>
                       <div className="flex items-center gap-2 hover:text-green-600 transition-colors duration-300 cursor-pointer group">
                         <GitFork className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
